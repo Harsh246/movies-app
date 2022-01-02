@@ -10,10 +10,8 @@ import movies from './reducers';
 const store = createStore(movies);
 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById('root'));
+
+
+
 

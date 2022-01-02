@@ -17,7 +17,7 @@ class MovieCard extends React.Component {
        
        <div className="plot" >
 {movie.Plot}
-<div className="footer" >
+<div className="footer" > 
 <div className="rating">{movie.imdbRating}</div>
 <button className="favourite-btn" >
 favourite
