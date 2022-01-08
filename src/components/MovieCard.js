@@ -11,12 +11,16 @@ class MovieCard extends React.Component {
 
     
 
-      const fav = store.getState().favourite;
+      const fav = store.getState().movies.favourite;
+
+      
      
       var index = -1;
+     
       if (fav) {
         index = fav.indexOf(movie);
       }
+
       if (index !== -1)
         return true;
 
@@ -28,17 +32,17 @@ class MovieCard extends React.Component {
     function addFav(movie) {
 
 
-
       store.dispatch(addFavourite(movie));
 
-      console.log('favourite:', store.getState().favourite);
+      console.log('favourite:', store.getState().movies.favourite);
+
 
     }
 
     function removeFav(movie) {
 
       store.dispatch(removeFavourite(movie));
-      console.log('favourite:', store.getState().favourite);
+      console.log('favourite:', store.getState().movies.favourite);
 
     }
  

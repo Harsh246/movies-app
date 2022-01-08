@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {createStore} from 'redux';
+
 
 import './index.css';
 import App from './components/App';
-import movies from './reducers';
 
-
-const store = createStore(movies);
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
+/*
+Now Main aim should be to be to change our initial state and store as well.
 
-
+*/
 
